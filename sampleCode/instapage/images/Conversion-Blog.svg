@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Conversion Blog</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1433.000000, -381.000000)" fill="#BACEE4" fill-rule="nonzero">
+            <g id="Conversion-Blog" transform="translate(1433.000000, 381.000000)">
+                <path d="M1.8,3.6 L0,3.6 L0,16.2 C0.00546480812,17.1918401 0.808159867,17.9945352 1.8,18 L14.4,18 L14.4,16.2 L1.8,16.2 L1.8,3.6 Z" id="Path"></path>
+                <path d="M16.2,0 L5.4,0 C4.40815987,0.00546480812 3.60546481,0.808159867 3.6,1.8 L3.6,12.6 C3.60546481,13.5918401 4.40815987,14.3945352 5.4,14.4 L16.2,14.4 C17.1918401,14.3945352 17.9945352,13.5918401 18,12.6 L18,1.8 C17.9945352,0.808159867 17.1918401,0.00546480812 16.2,0 Z M16.2,9 L14,7.65 L11.7,9 L11.7,1.8 L16.2,1.8 L16.2,9 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

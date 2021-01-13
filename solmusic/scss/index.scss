@@ -7,6 +7,12 @@
 div[class$="container"] {
   max-width: 1170px;
   margin: 0 auto;
+  @media (max-width: 991px) {
+    max-width: 720px;
+  }
+  @media (max-width: 768px) {
+    max-width: 540px;
+  }
 }
 p {
   font-size: 15px;
@@ -25,28 +31,41 @@ a {
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 .nav {
-  &-container {
+  &-containernav {
     display: flex;
     height: 112px;
     align-items: center;
+    width: 100%;
   }
   background: #08192d;
   padding-left: 55px;
   padding-right: 72px;
+
+  &-mobileWrapper {
+    width: 100%;
+    display: flex;
+  }
   &-menu {
     flex-grow: 2;
     text-align: end;
     margin: 0;
+    user-select: none;
     &-item {
       display: inline;
       margin-left: 60px;
       padding: 46.5px 0;
       &:nth-child(3) {
         position: relative;
-        &:hover > ul {
-          top: 112px;
-          opacity: 1;
-          visibility: visible;
+        //chevron-right
+        & > a > span > i {
+          display: none;
+        }
+        @media (min-width: 991px) {
+          &:hover > ul {
+            top: 112px;
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
       & > a {
@@ -82,20 +101,32 @@ a {
   }
   &-options {
     margin-left: 130px;
+    @media (max-width: 1262px) {
+      margin-left: 30px;
+    }
     & > a {
       color: #fff;
       &:nth-child(1) {
         color: #979aa5;
-      }
-      &:nth-child(4) {
-        color: #fc0254;
-        margin-left: 18px;
       }
     }
     & > span {
       color: #fff;
       padding: 0 10px;
     }
+    & > div {
+      display: inline-block;
+      & > a {
+        color: #fff;
+        padding: 0 10px;
+        &:nth-child(2) {
+          color: #fc0254;
+        }
+      }
+    }
+  }
+  &-menuTrigger {
+    display: none;
   }
 }
 .intro {
@@ -114,6 +145,7 @@ a {
       margin-bottom: 25px;
       font-size: 70px;
       line-height: 0.9;
+
       & > span {
         color: #fff;
         &:nth-child(1) {
@@ -128,6 +160,7 @@ a {
     }
     &-button {
       & > a {
+        display: inline-block;
         padding: 23px 31px;
         margin-bottom: 20px;
         background-color: #fc0254;
@@ -135,6 +168,7 @@ a {
         border-radius: 50px;
         text-transform: uppercase;
         color: #fff;
+
         &:nth-child(2) {
           margin-left: 8px;
           background-color: #383b70;
@@ -482,16 +516,137 @@ a {
     }
   }
 }
+.intro--animation {
+  animation: fadeIn 0.6s;
+}
+.hidden {
+  visibility: hidden;
+}
 @media (max-width: 991px) {
+  .rotateDown {
+    transform: rotate(90deg);
+  }
   .nav {
-    &-container {
-      justify-content: space-between;
+    &-containernav {
+      position: relative;
+      flex-direction: column;
+      height: 100%;
     }
-    &-menu,
+    &-desktopWrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 30px;
+    }
+
+    &-mobileWrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #1c294a;
+      margin-top: 30px;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      &--open {
+        max-height: 600px;
+      }
+      &--close {
+        max-height: 0px;
+      }
+    }
+    &-menu {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      &-item {
+        margin: 0;
+        padding: 0;
+        & > a {
+          //menu-item
+          display: inline-block;
+          width: 100%;
+          padding: 12px 25px;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+        &:nth-child(3) > a {
+          //menu-item pages
+          & > span {
+            position: relative;
+          }
+          &:hover {
+            background-color: #ccc;
+            border-radius: 6px;
+            color: #fff;
+          }
+          //chevron right
+          & > span > i {
+            position: absolute;
+            display: inline-block;
+            font-size: 7px;
+            top: 7px;
+            right: -10px;
+            transition: transform 0.2s;
+          }
+        }
+        &-dropdown {
+          visibility: visible;
+          opacity: 1;
+          position: static;
+          background-color: #1c294a;
+          width: 100%;
+          padding: 0;
+          transition: max-height 0.5s ease-in-out;
+          overflow: hidden;
+          &--open {
+            max-height: 300px;
+          }
+          &--close {
+            max-height: 0px;
+          }
+          & > li {
+            padding: 0;
+            & > a {
+              //submenu item
+              display: inline-block;
+              width: 100%;
+              color: #fff;
+              padding: 12px 25px;
+              font-size: 14px;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
     &-options {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      margin: 0px;
+      padding-bottom: 0px;
+      & > a {
+        display: inline;
+        font-size: 14px;
+        padding: 12px 25px;
+      }
+      & > div {
+        padding-left: 25px;
+        padding-bottom: 24px;
+        & > a {
+          &:nth-child(1) {
+            padding: 0;
+          }
+        }
+      }
+      & > span {
+        display: none;
+      }
     }
     &-menuTrigger {
+      display: flex;
+      justify-content: center;
       background-color: #1c294a;
       margin: 5px 5px 6px;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -503,6 +658,8 @@ a {
       }
       &-harmburger {
         display: inline-block;
+        margin-top: 4px;
+        margin-left: 7px;
         & > span {
           display: block;
           width: 18px;
@@ -518,5 +675,160 @@ a {
         cursor: pointer;
       }
     }
+  }
+  .intro {
+    &-content {
+      &-img {
+        display: none;
+      }
+      &-dots {
+        display: none;
+      }
+    }
+  }
+  .ultAccess {
+    &-container {
+      flex-direction: column;
+    }
+    &-header {
+      margin-bottom: 60px;
+    }
+  }
+  .ourConcept {
+    &-header {
+      flex-direction: column;
+      &-description {
+        margin-top: 0px;
+      }
+    }
+    &-body {
+      flex-wrap: wrap;
+      &-item {
+        flex-grow: 1;
+        flex-basis: 50%;
+        text-align: center;
+        &-img > img {
+          width: 267px;
+          height: 253px;
+        }
+      }
+    }
+  }
+  .subscription {
+    &-container {
+      flex-direction: column;
+    }
+    &-info {
+      margin-bottom: 50px;
+    }
+  }
+  .wgp {
+    &-header {
+      flex-direction: column;
+      &-title {
+        margin-bottom: 60px;
+      }
+    }
+    &-body {
+      flex-wrap: wrap;
+      &-item {
+        flex-grow: 1;
+        flex-basis: 50%;
+      }
+    }
+  }
+  .footer {
+    &-container {
+      flex-direction: column;
+    }
+    &-contact {
+      order: 2;
+    }
+    &-menu {
+      padding-bottom: 40px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .intro-content {
+    &-left {
+      margin-right: 0px;
+      padding: 15px;
+    }
+    &-button {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .hiw {
+    &-body {
+      flex-direction: column;
+      &-item-description {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .ourConcept {
+    &-body-item-img > img {
+      width: 240px;
+      height: 227px;
+    }
+  }
+  .subscription {
+    &-features {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .ourConcept {
+    &-body {
+      flex-direction: column;
+    }
+    &-body-item-img > img {
+      width: 267px;
+      height: 253px;
+    }
+  }
+  .subscription {
+    &-features {
+      padding-left: 15px !important;
+    }
+  }
+  .wgp {
+    &-body {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    .footer-menu {
+      flex-direction: column;
+      &-item {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 479px) {
+  .subscription {
+    &-info-header {
+      font-size: 36px;
+    }
+  }
+}
+//Animations
+@keyframes fadeIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

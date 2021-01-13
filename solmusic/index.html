@@ -15,48 +15,53 @@
   </head>
   <body>
     <section class="nav">
-      <div class="nav-container">
-        <div class="nav-brand">
-          <a href="#">
-            <img src="./images/logo.png" alt="logo" />
-          </a>
+      <div class="nav-containernav">
+        <div class="nav-desktopWrapper">
+          <div class="nav-brand">
+            <a href="#">
+              <img src="./images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav-menuTrigger">
+            <span>Menu</span>
+            <div class="nav-menuTrigger-harmburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#">About</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#">Pages</a>
-            <ul class="nav-menu-item-dropdown">
-              <li><a href="#">Category</a></li>
-              <li><a href="#">Playlist</a></li>
-              <li><a href="#">Artist</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#">News</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="nav-options">
-          <a href="#">Help</a>
-          <span>|</span>
-          <a href="#">Login</a>
-          <a href="#">Create an account</a>
-        </div>
-        <div class="nav-menuTrigger">
-          <span>Menu</span>
-          <div class="nav-menuTrigger-harmburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-mobileWrapper">
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" id="submenuMobileDropdownTrigger">
+                <span>Pages <i class="fas fa-chevron-right"></i></span
+              ></a>
+              <ul class="nav-menu-item-dropdown">
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Playlist</a></li>
+                <li><a href="#">Artist</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#">News</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-options">
+            <a href="#">Help</a>
+            <span>|</span>
+            <div><a href="#">Login</a> <a href="#">Create an account</a></div>
           </div>
         </div>
       </div>
@@ -167,7 +172,6 @@
             </div>
             <h5 class="ourConcept-body-item-title">soul music</h5>
           </div>
-
           <div class="ourConcept-body-item">
             <div class="ourConcept-body-item-img">
               <img src="./images/oac2.jpg" alt="our artist" />
@@ -193,7 +197,7 @@
       <div class="subscription-container">
         <div class="subscription-info">
           <h2 class="subscription-info-header">Subscription from $15/month</h2>
-          <h3 class="subscription-info-subtitle">start a free trail now</h3>
+          <h3 class="subscription-info-subtitle">Start a free trail now</h3>
           <p class="subscription-info-description">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
@@ -343,5 +347,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>
