@@ -1,0 +1,631 @@
+@font-face {
+  font-family: Gotham;
+  src: url("../fonts/GothamMedium.otf");
+}
+
+@font-face {
+  font-family: Clarin;
+  src: url("../fonts/clarins-regular.woff.ttf");
+}
+
+@font-face {
+  font-family: Myriad;
+  src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+*[class$="-container"] {
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  *[class$="-container"] {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 1000px) {
+  *[class$="-container"] {
+    max-width: 1000px;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 550px;
+          flex: 0 0 550px;
+}
+
+.header-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 450px;
+          flex: 0 0 450px;
+  margin-left: 10px;
+}
+
+.header-right-brand {
+  text-align: end;
+  margin-top: 37px;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 0.7;
+}
+
+.header-right-brand > a {
+  font-family: Clarin;
+  display: inline-block;
+  background-color: #ba0c2f;
+  padding: 12px 0px;
+  color: #fff;
+}
+
+.header-right-subTitle {
+  font-family: Gotham;
+  font-size: 16px;
+  color: #be0f34;
+  text-transform: uppercase;
+  margin-top: 75px;
+}
+
+.header-right-title {
+  font-family: Clarin;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.header-right-desc {
+  font-family: Clarin;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner-container {
+  position: relative;
+  background-image: url("../images/img_02.png");
+  height: 356px;
+  padding: 53px 91px;
+}
+
+.banner-detail {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 24px 73px;
+  text-align: center;
+}
+
+.banner-detail-header {
+  font-family: Myriad;
+  font-size: 35px;
+  color: #be0f34;
+}
+
+.banner-detail-desc {
+  font-family: Myriad;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.etape1 {
+  padding-top: 41px;
+}
+
+.etape1-header {
+  font-family: Myriad;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eca647;
+}
+
+.etape1-desc {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 164px;
+  margin-bottom: -10px;
+  margin-top: 27px;
+  line-height: 1.5;
+}
+
+.etape1-banner {
+  position: relative;
+  height: 240px;
+}
+
+.etape1-banner-imgLeft, .etape1-banner-imgRight, .etape1-banner-textLeft, .etape1-banner-textRight {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.etape1-banner-imgLeft > img, .etape1-banner-imgRight > img, .etape1-banner-textLeft > img, .etape1-banner-textRight > img {
+  width: 100%;
+}
+
+.etape1-banner-imgLeft {
+  left: 91px;
+}
+
+.etape1-banner-imgRight {
+  right: 76px;
+}
+
+.etape1-banner-desc {
+  font-family: Myriad;
+  font-size: 14px;
+  position: absolute;
+  z-index: 3;
+  top: 66px;
+  outline: none;
+  border: 5px solid #eca647;
+  margin: 0 164px;
+  padding: 21px 72px;
+  padding-top: 7px;
+  background-color: #fff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.etape1-banner-desc > legend {
+  padding: 0 9px;
+  color: #eca647;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.etape1-banner-desc > legend > span {
+  margin-left: 3px;
+}
+
+.etape1-banner-textLeft {
+  font-family: Myriad;
+  font-size: 12px;
+  top: 94px;
+  left: 25px;
+}
+
+.etape1-banner-textRight {
+  font-family: Myriad;
+  font-size: 12px;
+  top: 140px;
+  right: 30px;
+}
+
+.etape1-subDesc {
+  font-size: 28px;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.etape1-product {
+  margin-top: 52px;
+  padding-bottom: 41px;
+}
+
+.etape1-productList-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.etape1-productList-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+  text-align: center;
+}
+
+.etape1-productList-item-title, .etape1-productList-item-desc {
+  padding: 0 30px;
+}
+
+.etape1-productList-item-title {
+  font-family: Myriad;
+  font-size: 20px;
+  color: #be0f34;
+  margin-top: 22px;
+}
+
+.etape1-productList-item-desc {
+  font-family: Myriad;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.etape1-productList-item-buy {
+  display: inline-block;
+  font-family: Myriad;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 21px 44px;
+  margin-top: 10px;
+}
+
+.etape2-container {
+  background-color: #f3f9ef;
+}
+
+.etape2-header {
+  font-family: Myriad;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #96c59b;
+  padding-top: 53px;
+}
+
+.etape2-desc {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 164px;
+  margin-bottom: -10px;
+  margin-top: 27px;
+  line-height: 1.5;
+}
+
+.etape2-banner {
+  position: relative;
+  height: 240px;
+}
+
+.etape2-banner-imgRight, .etape2-banner-textRight {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.etape2-banner-imgRight > img, .etape2-banner-textRight > img {
+  width: 100%;
+}
+
+.etape2-banner-imgRight {
+  right: 76px;
+}
+
+.etape2-banner-desc {
+  font-family: Myriad;
+  font-size: 14px;
+  position: absolute;
+  z-index: 3;
+  top: 66px;
+  outline: none;
+  border: 5px solid #96c59b;
+  margin: 0 164px;
+  padding: 21px 72px;
+  padding-top: 7px;
+  background-color: #f3f9ef;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.etape2-banner-desc > legend {
+  padding: 0 9px;
+  color: #96c59b;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.etape2-banner-desc > legend > span {
+  margin-left: 3px;
+}
+
+.etape2-banner-textRight {
+  font-family: Myriad;
+  font-size: 12px;
+  top: 168px;
+  right: 68px;
+}
+
+.etape2-subDesc {
+  font-size: 28px;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.etape2-product {
+  margin-top: 52px;
+  padding-bottom: 41px;
+}
+
+.etape2-productList-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.etape2-productList-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  text-align: center;
+}
+
+.etape2-productList-item-title, .etape2-productList-item-desc {
+  padding: 0 30px;
+}
+
+.etape2-productList-item-title {
+  font-family: Myriad;
+  font-size: 20px;
+  color: #be0f34;
+  margin-top: 22px;
+}
+
+.etape2-productList-item-desc {
+  font-family: Myriad;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.etape2-productList-item-buy {
+  display: inline-block;
+  font-family: Myriad;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 21px 54.5px;
+  margin-top: 10px;
+}
+
+.about {
+  position: relative;
+}
+
+.about-container {
+  background: url("../images/about_1.png") no-repeat;
+  padding-top: 175px;
+}
+
+.about-content {
+  z-index: 3;
+  margin: 0 40px;
+  background-color: #fff;
+}
+
+.about-content-logo {
+  text-align: center;
+}
+
+.about-content-logo > img {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.about-content-header {
+  font-size: 35px;
+  color: #be0f34;
+  text-align: center;
+}
+
+.about-content-ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 40px;
+  margin-top: 25px;
+}
+
+.about-content-ad-desc {
+  background-color: #fce292;
+  padding: 30px 20px;
+  margin-bottom: 4px;
+}
+
+.about-content-ad-desc > p {
+  font-family: Myriad;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-content-ad-desc > p:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.etape3 {
+  padding-top: 41px;
+}
+
+.etape3-container {
+  background-color: #f2f4ff;
+}
+
+.etape3-header {
+  padding-top: 53px;
+  font-family: Myriad;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #9b99cd;
+}
+
+.etape3-desc {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 164px;
+  margin-bottom: -10px;
+  margin-top: 27px;
+  line-height: 1.5;
+}
+
+.etape3-banner {
+  position: relative;
+  height: 240px;
+}
+
+.etape3-banner-desc {
+  font-family: Myriad;
+  font-size: 14px;
+  position: absolute;
+  z-index: 3;
+  top: 66px;
+  outline: none;
+  border: 5px solid #a4a2c9;
+  margin: 0 164px;
+  padding: 21px 72px;
+  padding-top: 7px;
+  background-color: #f2f4ff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.etape3-banner-desc > legend {
+  padding: 0 9px;
+  color: #a4a2c9;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.etape3-banner-desc > legend > span {
+  margin-left: 3px;
+}
+
+.etape3-subDesc {
+  font-size: 28px;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.etape3-product {
+  margin-top: 52px;
+  padding-bottom: 41px;
+}
+
+.etape3-productList-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.etape3-productList-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+  text-align: center;
+}
+
+.etape3-productList-item-title, .etape3-productList-item-desc {
+  padding: 0 30px;
+}
+
+.etape3-productList-item-title {
+  font-family: Myriad;
+  font-size: 20px;
+  color: #be0f34;
+  margin-top: 22px;
+}
+
+.etape3-productList-item-desc {
+  font-family: Myriad;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.etape3-productList-item-buy {
+  display: inline-block;
+  font-family: Myriad;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 21px 54.5px;
+  margin-top: 10px;
+}
+
+.footer-container {
+  padding: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 408px;
+          flex: 0 0 408px;
+}
+
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 41px;
+}
+
+.footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-header-text {
+  font-family: Myriad;
+  font-size: 35px;
+  color: #be0f34;
+  margin-right: 60px;
+}
+
+.footer-header-img {
+  margin-top: -5px;
+  margin-right: -20px;
+}
+
+.footer-desc {
+  font-family: Myriad;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.footer-details {
+  font-family: Myriad;
+  background-color: #f0cfba;
+  padding: 41px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.footer-details > p:nth-child(1) {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

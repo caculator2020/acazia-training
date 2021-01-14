@@ -1,0 +1,113 @@
+.etape2 {
+  &-container {
+    background-color: #f3f9ef;
+  }
+  &-header {
+    font-family: Myriad;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #96c59b;
+    padding-top: 53px;
+  }
+  &-desc {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 164px;
+    margin-bottom: -10px;
+    margin-top: 27px;
+    line-height: 1.5;
+  }
+  &-banner {
+    position: relative;
+    height: 240px;
+
+    &-imgRight,
+    &-textRight {
+      position: absolute;
+      top: 0px;
+      z-index: 1;
+      & > img {
+        width: 100%;
+      }
+    }
+    &-imgRight {
+      right: 76px;
+    }
+    &-desc {
+      font-family: Myriad;
+      font-size: 14px;
+      position: absolute;
+      z-index: 3;
+      top: 66px;
+      outline: none;
+      border: 5px solid #96c59b;
+      margin: 0 164px;
+      padding: 21px 72px;
+      padding-top: 7px;
+      background-color: #f3f9ef;
+      line-height: 1.5;
+      text-align: center;
+      & > legend {
+        padding: 0 9px;
+        color: #96c59b;
+        font-size: 24px;
+        font-weight: bold;
+        & > span {
+          margin-left: 3px;
+        }
+      }
+    }
+    &-textRight {
+      font-family: Myriad;
+      font-size: 12px;
+      top: 168px;
+      right: 68px;
+    }
+  }
+  &-subDesc {
+    font-size: 28px;
+    text-align: center;
+    margin-top: -25px;
+  }
+  &-product {
+    margin-top: 52px;
+    padding-bottom: 41px;
+  }
+  &-productList {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      flex: 0 0 10/4 * 10%;
+      text-align: center;
+      &-title,
+      &-desc {
+        padding: 0 30px;
+      }
+      &-title {
+        font-family: Myriad;
+        font-size: 20px;
+        color: #be0f34;
+        margin-top: 22px;
+      }
+      &-desc {
+        font-family: Myriad;
+        font-size: 14px;
+        margin-top: 14px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      &-buy {
+        display: inline-block;
+        font-family: Myriad;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        padding: 21px 54.5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

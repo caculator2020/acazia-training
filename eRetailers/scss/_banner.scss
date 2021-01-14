@@ -1,0 +1,26 @@
+.banner {
+  &-container {
+    position: relative;
+    background-image: url("../images/img_02.png");
+    height: 356px;
+    padding: 53px 91px;
+  }
+  &-detail {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 24px 73px;
+    text-align: center;
+    &-header {
+      font-family: Myriad;
+      font-size: 35px;
+      color: #be0f34;
+    }
+    &-desc {
+      font-family: Myriad;
+      font-size: 12px;
+      line-height: 2;
+      font-weight: 400;
+    }
+  }
+}

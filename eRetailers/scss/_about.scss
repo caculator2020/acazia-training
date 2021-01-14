@@ -1,0 +1,42 @@
+.about {
+  position: relative;
+  &-container {
+    background: url("../images/about_1.png") no-repeat;
+    padding-top: 175px;
+  }
+  &-content {
+    z-index: 3;
+    margin: 0 40px;
+    background-color: #fff;
+    &-logo {
+      text-align: center;
+      & > img {
+        display: inline-block;
+        margin-top: 16px;
+      }
+    }
+    &-header {
+      font-size: 35px;
+      color: #be0f34;
+      text-align: center;
+    }
+    &-ad {
+      display: flex;
+      margin: 0px 40px;
+      margin-top: 25px;
+      &-desc {
+        background-color: #fce292;
+        padding: 30px 20px;
+        margin-bottom: 4px;
+        & > p {
+          font-family: Myriad;
+          font-size: 16px;
+          line-height: 1.5;
+          &:nth-child(1) {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}

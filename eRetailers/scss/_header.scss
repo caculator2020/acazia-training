@@ -1,0 +1,46 @@
+.header {
+  &-container {
+    display: flex;
+  }
+  &-left {
+    flex: 0 0 550px;
+  }
+  &-right {
+    flex: 0 0 450px;
+    margin-left: 10px;
+    &-brand {
+      text-align: end;
+      margin-top: 37px;
+
+      font-size: 30px;
+      text-transform: uppercase;
+      line-height: 0.7;
+      & > a {
+        font-family: Clarin;
+        display: inline-block;
+        background-color: #ba0c2f;
+        padding: 12px 0px;
+        color: #fff;
+      }
+    }
+    &-subTitle {
+      font-family: Gotham;
+      font-size: 16px;
+      color: #be0f34;
+      text-transform: uppercase;
+      margin-top: 75px;
+    }
+    &-title {
+      font-family: Clarin;
+      margin-top: 10px;
+      font-size: 40px;
+      font-weight: 400;
+    }
+    &-desc {
+      font-family: Clarin;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
