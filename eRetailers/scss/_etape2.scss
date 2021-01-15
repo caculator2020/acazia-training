@@ -113,32 +113,33 @@
 }
 @media (max-width: 1000px) {
   .etape2 {
+    &-container {
+      overflow: hidden;
+    }
     &-desc {
       margin: 27px 20px;
     }
+    &-subDesc {
+      margin-top: -30px;
+    }
     &-banner {
       height: 285px;
-      &-imgLeft {
-        left: 0;
-      }
       &-imgRight {
         right: 0;
+        transform: rotate(45deg);
       }
       &-desc {
         margin: 0 20px;
         padding: 0px 13px;
-        top: 50px;
+        top: 7px;
         padding-bottom: 10px;
-      }
-      &-textLeft {
-        z-index: 5;
-        top: 190px;
-        left: 50px;
       }
       &-textRight {
         z-index: 5;
-        top: 191px;
-        left: 170px;
+        top: 170px;
+        left: 274px;
+        white-space: nowrap;
+        display: inline-block;
       }
     }
   }

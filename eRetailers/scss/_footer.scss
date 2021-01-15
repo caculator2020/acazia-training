@@ -45,3 +45,28 @@
     }
   }
 }
+@media (max-width: 1000px) {
+  //video 409X433
+  .footer {
+    &-container {
+      flex-direction: column;
+    }
+    &-left {
+      padding-right: 0;
+    }
+    &-header-text {
+      margin-right: 0;
+      text-align: start;
+      margin-bottom: 20px;
+    }
+    &-desc {
+      margin-bottom: 20px;
+    }
+    &-details {
+      margin-bottom: 8px;
+    }
+    &-header-img {
+      display: none;
+    }
+  }
+}

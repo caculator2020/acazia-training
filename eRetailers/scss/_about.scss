@@ -22,12 +22,12 @@
     }
     &-ad {
       display: flex;
+      align-items: stretch;
       margin: 0px 40px;
       margin-top: 25px;
       &-desc {
         background-color: #fce292;
         padding: 30px 20px;
-        margin-bottom: 4px;
         & > p {
           font-family: Myriad;
           font-size: 16px;
@@ -35,6 +35,33 @@
           &:nth-child(1) {
             margin-bottom: 16px;
           }
+        }
+      }
+      &-video {
+        flex: 0 0 458px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    &-container {
+      height: 175px;
+    }
+    &-content {
+      margin-left: 20px;
+      margin-right: 20px;
+      &-ad {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        &-desc {
+          margin-top: -94px;
+        }
+        &-video {
+          position: relative;
+          flex: 0 0 224px;
         }
       }
     }

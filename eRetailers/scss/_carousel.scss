@@ -9,8 +9,30 @@
       position: relative;
       display: flex;
       flex-wrap: nowrap;
-      width: 375px * 3;
+      width: 10000px;
       left: 0px;
+      transition: left 0.2s ease-out;
+      & > div {
+        flex: 0 0 375px;
+      }
+    }
+    &-dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+    &-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #cbcbcb;
+      margin-right: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+      &--active {
+        background-color: #000;
+      }
     }
   }
 }
