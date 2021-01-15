@@ -1,0 +1,16 @@
+//not done yet
+@media (max-width: 1000px) {
+  .carousel {
+    width: 375px;
+    overflow: hidden;
+    position: relative;
+    width: 375px;
+    & > div {
+      position: relative;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 375px * 3;
+      left: 0px;
+    }
+  }
+}

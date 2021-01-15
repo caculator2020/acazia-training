@@ -4,12 +4,19 @@
     background-image: url("../images/img_02.png");
     height: 356px;
     padding: 53px 91px;
+    @media (max-width: 1000px) {
+      height: 482px;
+      padding: 27px 20px;
+    }
   }
   &-detail {
     height: 100%;
     width: 100%;
     background-color: #fff;
     padding: 24px 73px;
+    @media (max-width: 1000px) {
+      padding: 12px 12px 45px 12px;
+    }
     text-align: center;
     &-header {
       font-family: Myriad;
@@ -21,6 +28,9 @@
       font-size: 12px;
       line-height: 2;
       font-weight: 400;
+      @media (max-width: 1000px) {
+        margin-top: 43px;
+      }
     }
   }
 }

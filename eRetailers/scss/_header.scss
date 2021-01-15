@@ -1,12 +1,28 @@
 .header {
   &-container {
     display: flex;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
   &-left {
     flex: 0 0 550px;
+    @media (max-width: 1000px) {
+      order: 2;
+    }
+    & > img {
+      width: 100%;
+    }
+    @media (max-width: 1000px) {
+      flex: 0 0 300px;
+    }
   }
   &-right {
     flex: 0 0 450px;
+    @media (max-width: 1000px) {
+      order: 1;
+      flex: 0 0 45px;
+    }
     margin-left: 10px;
     &-brand {
       text-align: end;
@@ -24,6 +40,9 @@
       }
     }
     &-subTitle {
+      @media (max-width: 1000px) {
+        display: none;
+      }
       font-family: Gotham;
       font-size: 16px;
       color: #be0f34;
@@ -31,12 +50,18 @@
       margin-top: 75px;
     }
     &-title {
+      @media (max-width: 1000px) {
+        display: none;
+      }
       font-family: Clarin;
       margin-top: 10px;
       font-size: 40px;
       font-weight: 400;
     }
     &-desc {
+      @media (max-width: 1000px) {
+        display: none;
+      }
       font-family: Clarin;
       margin-top: 10px;
       font-size: 18px;

@@ -9,7 +9,6 @@
   }
   &-desc {
     font-size: 16px;
-
     text-align: center;
     margin: 0 164px;
     margin-bottom: -10px;
@@ -41,7 +40,7 @@
       font-size: 14px;
       position: absolute;
       z-index: 3;
-      top: 66px;
+      top: 60px;
       outline: none;
       border: 5px solid #eca647;
       margin: 0 164px;
@@ -114,6 +113,39 @@
         font-size: 11px;
         padding: 21px 44px;
         margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .etape1 {
+    &-desc {
+      margin: 27px 20px;
+    }
+    &-banner {
+      height: 285px;
+      &-imgLeft {
+        left: 0;
+      }
+      &-imgRight {
+        right: 0;
+      }
+      &-desc {
+        margin: 0 20px;
+        padding: 0px 13px;
+        top: 50px;
+        padding-bottom: 10px;
+      }
+      &-textLeft {
+        z-index: 5;
+        top: 190px;
+        left: 50px;
+      }
+      &-textRight {
+        z-index: 5;
+        top: 191px;
+        left: 170px;
       }
     }
   }
