@@ -41,6 +41,8 @@ a {
 }
 
 .header-container {
+  background: url("../img/header_banner.png") no-repeat -210px -63px;
+  height: 429px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,8 +87,6 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 450px;
           flex: 0 0 450px;
-  background-color: #fafcfe;
-  margin-left: 10px;
 }
 
 @media (max-width: 1000px) {
@@ -115,11 +115,7 @@ a {
 }
 
 .header-right-brand > a {
-  font-family: Clarin;
   display: inline-block;
-  background-color: #ba0c2f;
-  padding: 12px 0px;
-  color: #fff;
 }
 
 .header-right-subTitle {
@@ -199,7 +195,9 @@ a {
 .banner-detail-desc {
   font-family: Myriad;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
+  letter-spacing: 2.5px;
+  word-spacing: 3px;
   font-weight: 400;
 }
 

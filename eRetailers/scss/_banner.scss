@@ -26,7 +26,9 @@
     &-desc {
       font-family: Myriad;
       font-size: 12px;
-      line-height: 2;
+      line-height: 1.5;
+      letter-spacing: 2.5px;
+      word-spacing: 3px;
       font-weight: 400;
       @media (max-width: 1000px) {
         margin-top: 43px;

@@ -1,5 +1,7 @@
 .header {
   &-container {
+    background: url("../img/header_banner.png") no-repeat -210px -63px;
+    height: 429px;
     display: flex;
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -19,12 +21,11 @@
   }
   &-right {
     flex: 0 0 450px;
-    background-color: #fafcfe;
     @media (max-width: 1000px) {
       order: 1;
       flex: 0 0 45px;
     }
-    margin-left: 10px;
+
     &-brand {
       text-align: end;
       margin-top: 37px;
@@ -35,11 +36,7 @@
       text-transform: uppercase;
       line-height: 0.7;
       & > a {
-        font-family: Clarin;
         display: inline-block;
-        background-color: #ba0c2f;
-        padding: 12px 0px;
-        color: #fff;
       }
     }
     &-subTitle {
