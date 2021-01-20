@@ -1,13 +1,20 @@
-.etape1 {
+//colors
+$orange: #eca647;
+$green: #96c59b;
+$ligtGreen: #f3f9ef;
+$purple: #9b99cd;
+$lightPurple: #f2f4ff;
+.Etape {
   padding-top: 41px;
   &-header {
-    font-family: Myriad;
+    font-family: GothamMedium;
     font-size: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: #eca647;
+    color: $orange;
   }
   &-desc {
+    font-family: GothamBook;
     font-size: 16px;
     text-align: center;
     margin: 0 164px;
@@ -31,48 +38,59 @@
     }
     &-imgLeft {
       left: 91px;
+      top: 12px;
     }
     &-imgRight {
       right: 76px;
     }
     &-desc {
-      font-family: Myriad;
+      font-family: GothamBook;
       font-size: 14px;
       position: absolute;
       z-index: 3;
-      top: 60px;
+      top: 50px;
       outline: none;
-      border: 5px solid #eca647;
+      border: 5px solid $orange;
       margin: 0 164px;
-      padding: 21px 72px;
-      padding-top: 7px;
+      padding: 0px 72px;
       background-color: #fff;
       line-height: 1.5;
       text-align: center;
       & > legend {
+        display: flex;
+        align-items: center;
+        font-family: GothamBold;
         padding: 0 9px;
-        color: #eca647;
+        color: $orange;
         font-size: 24px;
         font-weight: bold;
+        margin-bottom: -15px;
         & > span {
-          margin-left: 3px;
+          &:nth-child(2) {
+            font-size: 47px;
+            margin-left: 5px;
+          }
         }
+      }
+      & > p {
+        margin-bottom: 10px;
       }
     }
     &-textLeft {
-      font-family: Myriad;
+      font-family: GothamBook;
       font-size: 12px;
       top: 94px;
-      left: 25px;
+      left: 30px;
     }
     &-textRight {
-      font-family: Myriad;
+      font-family: GothamBook;
       font-size: 12px;
       top: 140px;
-      right: 30px;
+      right: 50px;
     }
   }
   &-subDesc {
+    font-family: Clarin;
     font-size: 28px;
     text-align: center;
     margin-top: -25px;
@@ -94,32 +112,62 @@
         padding: 0 30px;
       }
       &-title {
-        font-family: Myriad;
+        font-family: GothamMedium;
         font-size: 20px;
         color: #be0f34;
         margin-top: 22px;
       }
       &-desc {
-        font-family: Myriad;
+        font-family: GothamBook;
         font-size: 14px;
         margin-top: 14px;
         line-height: 1.5;
       }
       &-buy {
         display: inline-block;
-        font-family: Myriad;
+        font-family: GothamMedium;
         background-color: #000;
         color: #fff;
         font-size: 11px;
-        padding: 21px 44px;
+        padding: 18px 50px;
         margin-top: 10px;
       }
     }
   }
 }
-
+//override styles
+.color--green {
+  color: $green !important;
+}
+.color--purple {
+  color: $purple !important;
+}
+.border--green {
+  border-color: $green !important;
+}
+.border--purple {
+  border-color: $purple !important;
+}
+.bg--lightGreen {
+  background-color: $ligtGreen !important;
+}
+.bg--lightPurple {
+  background-color: $lightPurple !important;
+}
+//Etape2
+.etape2 {
+  &-banner {
+    &-imgRight {
+      top: 44px;
+    }
+    &-textRight {
+      top: 212px;
+      right: 55px;
+    }
+  }
+}
 @media (max-width: 1000px) {
-  .etape1 {
+  .Etape {
     &-desc {
       margin: 27px 20px;
     }

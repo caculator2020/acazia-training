@@ -1,4 +1,4 @@
-.about {
+.About {
   position: relative;
   &-container {
     background: url("../images/about_1.png") no-repeat;
@@ -16,6 +16,7 @@
       }
     }
     &-header {
+      font-family: Clarin;
       font-size: 35px;
       color: #be0f34;
       text-align: center;
@@ -29,7 +30,7 @@
         background-color: #fce292;
         padding: 30px 20px;
         & > p {
-          font-family: Myriad;
+          font-family: GothamBook;
           font-size: 16px;
           line-height: 1.5;
           &:nth-child(1) {
@@ -45,7 +46,7 @@
 }
 
 @media (max-width: 1000px) {
-  .about {
+  .About {
     &-container {
       height: 175px;
     }

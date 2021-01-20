@@ -1,6 +1,6 @@
-.header {
+.Header {
   &-container {
-    background: url("../img/header_banner.png") no-repeat -210px -63px;
+    background: url("../images/header_banner.png") no-repeat -210px -63px;
     height: 429px;
     display: flex;
     @media (max-width: 1000px) {
@@ -43,7 +43,7 @@
       @media (max-width: 1000px) {
         display: none;
       }
-      font-family: Gotham;
+      font-family: GothamMedium;
       font-size: 16px;
       color: #be0f34;
       text-transform: uppercase;
@@ -62,7 +62,7 @@
       @media (max-width: 1000px) {
         display: none;
       }
-      font-family: Clarin;
+      font-family: GothamBook;
       margin-top: 10px;
       font-size: 18px;
       font-weight: 400;
