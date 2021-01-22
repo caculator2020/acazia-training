@@ -1,16 +1,20 @@
 @font-face {
   font-family: GothamMedium;
-  src: url("../fonts/GothamMedium.otf");
+  src: url("../fonts/GothamMedium.otf"), url("../fonts/GothamMedium.ttf"),
+    url("../fonts/GothamMedium.woff"), url("../fonts/GothamMedium.woff2");
 }
 @font-face {
   font-family: Clarin;
-  src: url("../fonts/clarins-regular.woff.ttf");
+  src: url("../fonts/clarins-regular.woff.ttf"),
+    url("../fonts/Clarins-Regular.woff"), url("../fonts/Clarins-Regular.woff2");
 }
 @font-face {
   font-family: GothamBook;
-  src: url("../fonts/GothamBook.otf");
+  src: url("../fonts/GothamBook.otf"), url("../fonts/GothamBook.ttf"),
+    url("../fonts/GothamBook.woff"), url("../fonts/GothamBook.woff2");
 }
 @font-face {
   font-family: GothamBold;
-  src: url("../fonts/GothamBold.otf");
+  src: url("../fonts/GothamBold.otf"), url("../fonts/Gotham-Bold.ttf"),
+    url("../fonts/Gotham-Bold.woff"), url("../fonts/Gotham-Bold.woff2");
 }
