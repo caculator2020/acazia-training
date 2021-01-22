@@ -5,19 +5,19 @@ $ligtGreen: #f3f9ef;
 $purple: #9b99cd;
 $lightPurple: #f2f4ff;
 .Etape {
-  padding-top: 41px;
   &-header {
     font-family: GothamMedium;
     font-size: 28px;
     text-align: center;
     text-transform: uppercase;
     color: $orange;
+    padding-top: 40px;
   }
   &-desc {
     font-family: GothamBook;
     font-size: 16px;
     text-align: center;
-    margin: 0 164px;
+    margin: 0 135px;
     margin-bottom: -10px;
     margin-top: 27px;
     line-height: 1.5;
@@ -25,6 +25,7 @@ $lightPurple: #f2f4ff;
   &-banner {
     position: relative;
     height: 240px;
+    overflow: visible;
     &-imgLeft,
     &-imgRight,
     &-textLeft,
@@ -52,7 +53,7 @@ $lightPurple: #f2f4ff;
       outline: none;
       border: 5px solid $orange;
       margin: 0 164px;
-      padding: 0px 72px;
+      padding: 0px 65px;
       background-color: #fff;
       line-height: 1.5;
       text-align: center;
@@ -100,22 +101,23 @@ $lightPurple: #f2f4ff;
     padding-bottom: 41px;
   }
   &-productList {
-    &-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
     &-item {
-      flex: 0 0 10/3 * 10%;
       text-align: center;
       &-title,
       &-desc {
-        padding: 0 30px;
+        padding: 0 15px;
       }
       &-title {
         font-family: GothamMedium;
         font-size: 20px;
         color: #be0f34;
         margin-top: 22px;
+      }
+      &-img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 436px;
       }
       &-desc {
         font-family: GothamBook;
@@ -154,6 +156,12 @@ $lightPurple: #f2f4ff;
 .bg--lightPurple {
   background-color: $lightPurple !important;
 }
+//Etape1
+.etape1 {
+  &-banner-desc {
+    padding: 10px 30px;
+  }
+}
 //Etape2
 .etape2 {
   &-banner {
@@ -164,9 +172,30 @@ $lightPurple: #f2f4ff;
       top: 212px;
       right: 55px;
     }
+    &-desc {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  &-productList-item-desc {
+    font-weight: bold;
   }
 }
-@media (max-width: 1000px) {
+//Etape3
+.etape3 {
+  &-desc {
+    margin: 20px 100px;
+    margin-bottom: -25px;
+  }
+  &-banner {
+    height: 200px;
+    &-desc {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 767px) {
   .Etape {
     &-desc {
       margin: 27px 20px;
@@ -192,9 +221,91 @@ $lightPurple: #f2f4ff;
       }
       &-textRight {
         z-index: 5;
-        top: 191px;
-        left: 170px;
+        top: 215px;
+        right: 15px;
       }
     }
   }
+  .etape1 {
+    &-desc {
+      margin: 0px 20px;
+      margin-bottom: 10px;
+    }
+    &-banner-desc {
+      top: 25px;
+    }
+    &-banner-imgLeft {
+      left: -20px;
+      top: -5px;
+    }
+    &-banner-imgRight {
+      right: -35px;
+    }
+    &-banner-textLeft {
+      top: 175px;
+      left: 40px;
+    }
+    &-banner-textRight {
+      top: 175px;
+      left: 195px;
+    }
+  }
+  .etape2 {
+    &-banner {
+      overflow: hidden;
+    }
+    &-banner-desc {
+      top: 25px;
+    }
+    &-banner-imgRight {
+      transform: rotate(45deg);
+      right: 20px;
+    }
+
+    &-banner-textRight {
+      top: 215px;
+      left: 250px;
+    }
+    &-productList-item-desc {
+      font-weight: bold;
+    }
+  }
+  .etape3 {
+    padding-top: 650px;
+    &-banner {
+      height: 230px;
+    }
+    &-desc {
+      margin-bottom: -35px;
+    }
+  }
+}
+@media (min-width: 767px) and (max-width: 1000px) {
+  .etape1 {
+    &-subDesc {
+      margin: 0 20px;
+      margin-top: 15px;
+    }
+    &-productList-item-desc {
+      font-size: 12px;
+    }
+  }
+  .etape2 {
+    &-subDesc {
+      margin: 0 30px;
+      margin-top: 65px;
+    }
+    &-productList-item-desc {
+      font-size: 10px;
+    }
+    &-etape2-productList-item-title {
+      font-size: 16px;
+    }
+  }
+  .etape3-subDesc {
+    margin: 25px;
+  }
+}
+.slick-dots > li {
+  margin: 0 -5px;
 }

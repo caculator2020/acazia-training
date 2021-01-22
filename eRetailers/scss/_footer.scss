@@ -1,7 +1,11 @@
 .footer {
   &-container {
-    padding: 41px;
+    padding: 40px;
     display: flex;
+    @media (max-width: 767px) {
+      text-align: center;
+      padding: 20px;
+    }
   }
   &-right {
     flex: 0 0 408px;
@@ -17,11 +21,20 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
+
     &-text {
       font-family: Clarin;
       font-size: 35px;
       color: #be0f34;
       margin-right: 60px;
+      width: 100%;
+      @media (max-width: 768px) {
+        & > span {
+          width: 100%;
+          display: inline-block;
+          text-align: center;
+        }
+      }
     }
     &-img {
       margin-top: -5px;
@@ -38,6 +51,9 @@
     font-family: GothamBook, GothamMedium;
     background-color: #f0cfba;
     padding: 41px;
+    @media (max-width: 767px) {
+      padding: 20px 30px;
+    }
     font-size: 16px;
     line-height: 1.3;
     & > p {
@@ -50,7 +66,7 @@
     }
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   //video 409X433
   .footer {
     &-container {

@@ -1,7 +1,11 @@
 .About {
   position: relative;
+  padding-bottom: 40px;
   &-container {
     background: url("../images/about_1.png") no-repeat;
+    @media (max-width: 767px) {
+      background: url("../images/about_1.png") no-repeat center 0px;
+    }
     padding-top: 175px;
   }
   &-content {
@@ -29,6 +33,9 @@
       &-desc {
         background-color: #fce292;
         padding: 30px 20px;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
         & > p {
           font-family: GothamBook;
           font-size: 16px;
@@ -44,8 +51,18 @@
     }
   }
 }
-
 @media (max-width: 1000px) {
+  .About {
+    &-content {
+      &-ad {
+        &-video {
+          flex: 0 0 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
   .About {
     &-container {
       height: 175px;

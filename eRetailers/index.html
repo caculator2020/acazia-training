@@ -3,424 +3,559 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./scss/styles.css" />
     <title>eRetailers</title>
   </head>
 
   <body>
-    <div class="Container">
-      <div class="Header">
-        <div class="Header-container">
-          <div class="Header-left"></div>
-          <div class="Header-right">
-            <div class="Header-right-brand">
-              <a href="#"><img src="images/logo.png" /></a>
-            </div>
-            <p class="Header-right-subTitle">nouveau</p>
-            <h3 class="Header-right-title">
-              Les experts demaquilants aux Herbes des Alpes
-            </h3>
-            <p class="Header-right-desc">
-              La purete des montagnes pour votre peau
-            </p>
+    <div class="Header">
+      <div class="Header-container Container">
+        <div class="Header-left">
+          <div class="Header-left-img">
+            <img src="images/clarin-bglogo.png" />
           </div>
         </div>
-      </div>
-      <div class="Banner">
-        <div class="Banner-container">
-          <div class="Banner-detail">
-            <h3 class="Banner-detail-header">
-              <p>La pureté des Alpes :</p>
-              <p>notre inspiration depuis toujours</p>
-            </h3>
-            <div class="Banner-detail-desc">
-              <p>
-                La pureté des Alpes a toujours inspiré Jacques-Courtin Clarins,
-              </p>
-              <p>le fondateur de la marque.</p>
-              <p>
-                Aujourd’hui, Clarins va plus loin en cultivant et en récoltant
-                ces herbes des Alpes
-              </p>
-              <p>
-                au cœur du Domaine Clarins 100% bio : des actifs naturellement
-                efficaces
-              </p>
-              <p>et bons pour la peau.</p>
-              <p>
-                Vous profitez ainsi de tous les bienfaits des Alpes, à chaque
-                démaquillage !
-              </p>
-            </div>
+        <div class="Header-right">
+          <div class="Header-right-brand">
+            <a href="#"><img src="images/Logo.png" /></a>
           </div>
-        </div>
-      </div>
-      <div class="Etape">
-        <div class="Etape-container">
-          <h3 class="Etape-header">étape 1 : démaquillez</h3>
-          <p class="Etape-desc">
-            Des démaquillants qui retirent le maquillage, les impuretés et les
-            traces de pollution en douceur et en respectant de la flore cutanée.
+          <p class="Header-right-subTitle">nouveau</p>
+          <h3 class="Header-right-title">
+            Les experts demaquilants aux Herbes des Alpes
+          </h3>
+          <p class="Header-right-desc">
+            La purete des montagnes pour votre peau
           </p>
-          <div class="Etape-banner">
-            <div class="Etape-banner-imgLeft">
-              <img src="./images/etape_2.png" />
-            </div>
-            <fieldset class="Etape-banner-desc">
-              <legend><span>LE</span> <span>+</span></legend>
-              <p>
-                Le [COMPLEXE DOUCEUR], qui associe deux plantes issues du
-                Domaine Clarins : la gentiane jaune bio et la mélisse bio,
-                contribue à apaiser, calmer et adoucir la peau.
-              </p>
-            </fieldset>
-            <div class="Etape-banner-imgRight">
-              <img src="./images/etape_1.png" />
-            </div>
-            <p class="Etape-banner-textLeft">Gentiane jaune bio</p>
-            <p class="Etape-banner-textRight">Mélisse bio</p>
-          </div>
-          <div class="Etape-subDesc">
-            <p>Découvrez nos 3 nouvelles formules</p>
-            <p>adaptées à tous les maquillages et toutes les habitudes</p>
-          </div>
-          <div class="Etape-product">
-            <div class="Etape-productList carousel">
-              <div class="Etape-productList-wrapper">
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="./images/etape_3.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    <p>Lait Velours</p>
-                    <p>Démaquillant</p>
-                  </h3>
-                  <div class="Etape-productList-item-desc">
-                    <p>Il s’adresse aux adeptes</p>
-                    <p>de confort, de textures onctueuses</p>
-                    <p>et de maquillages légers.</p>
-                    <p>Idéal pour un démaquillage</p>
-                    <p>tout en douceur.</p>
-                  </div>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE DÉMAQUILLE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="./images/etape_4.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    <p>Eau Micellaire</p>
-                    <p>Démaquillante</p>
-                  </h3>
-                  <div class="Etape-productList-item-desc">
-                    <p>Elle convient aux peaux sensibles</p>
-                    <p>ou aux adeptes de démaquillages</p>
-                    <p>légers et de textures fraîches.</p>
-                    <p>Idéale pour un</p>
-                    <p>démaquillage rapide</p>
-                  </div>
-                  <a href="##" class="Etape-productList-item-buy">
-                    JE DÉMAQUILLE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="./images/etape_5.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    <p>Huile</p>
-                    <p>Très Démaquillante</p>
-                  </h3>
-                  <div class="Etape-productList-item-desc">
-                    <p>Elle séduit les amoureuses</p>
-                    <p>de maquillages intenses,</p>
-                    <p>waterproofs et de</p>
-                    <p>textures</p>
-                    <p>enveloppantes.</p>
-                  </div>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE DÉMAQUILLE
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-dots">
-                <div>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="Etape">
-        <div class="Etape-container bg--lightGreen">
-          <h3 class="Etape-header color--green">étape 2 : nettoyez</h3>
-          <p class="Etape-desc">
-            Une offre complète pour nettoyer la peau, éliminer les impuretés et
-            particules de pollution. Grâce au [COMPLEXE DOUCEUR], la peau est
-            apaisée et adoucie !
-          </p>
-          <div class="Etape-banner">
-            <fieldset class="Etape-banner-desc bg--lightGreen border--green">
-              <legend class="color--green">
-                <span>LE</span> <span>+</span>
-              </legend>
-              <p>
-                L’extrait de Saponaire Bio, présent dans les nettoyants Clarins
-                est un agent moussant naturel, idéal pour nettoyer la peau tout
-                en douceur !
-              </p>
-            </fieldset>
-            <div class="Etape-banner-imgRight etape2-banner-imgRight">
-              <img src="./images/etape2_1.png" />
-            </div>
-            <p class="Etape-banner-textRight etape2-banner-textRight">
-              Saponaire bio
-            </p>
-          </div>
-          <div class="Etape-subDesc">
-            <p>Découvrez nos 4 nouvelles formules</p>
-            <p>adaptées à tous les besoins et types de peaux</p>
-          </div>
-          <div class="Etape-product">
-            <div class="Etape-productList carousel">
-              <div class="Etape-productList-wrapper">
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="images/etape2_2.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    <p>Doux Nettoyant</p>
-                    <p>Moussant Purifiant</p>
-                  </h3>
-                  <p class="Etape-productList-item-desc">
-                    Peaux mixtes à grasses
-                  </p>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE NETTOIE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="images/etape2_3.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    <p>Doux Nettoyant</p>
-                    <p>Moussant Hydratant</p>
-                  </h3>
-                  <p class="Etape-productList-item-desc">
-                    Peaux normales à sèches
-                  </p>
-                  <a href="##" class="Etape-productList-item-buy">
-                    JE NETTOIE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="images/etape2_4.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    Doux Nettoyant Moussant Apaisant
-                  </h3>
-                  <p class="Etape-productList-item-desc">
-                    Peaux très sèches ou sensibles
-                  </p>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE NETTOIE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="images/etape2_5.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    <p>Mousse Nettoyante</p>
-                    <p>Peau Neuve</p>
-                  </h3>
-                  <p class="Etape-productList-item-desc">Toutes peaux</p>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE NETTOIE
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-dots">
-                <div>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="About">
-        <div class="About-container">
-          <div class="About-content">
-            <div class="About-content-logo">
-              <img src="images/about_2.png" />
-            </div>
-            <h3 class="About-content-header">Le Domaine Clarins :</h3>
-            <h3 class="About-content-header">un laboratoire à ciel ouvert</h3>
-
-            <div class="About-content-ad">
-              <div class="About-content-ad-video">
-                <!-- <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/sb6WlQiaJeM"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe> -->
-              </div>
-              <div class="About-content-ad-desc">
-                <p>
-                  Un site unique et préservé, niché à 1 400 mètres d’altitude au
-                  cœur des Alpes où les plantes poussent au rythme des saisons.
-                </p>
-                <p>
-                  Un véritable écrin de pureté sans pollution de l’air et des
-                  sols sur lequel Clarins, élabore ses propres extraits de
-                  plantes gorgés d’actifs, dont la gentiane jaune bio et mélisse
-                  bio : des ingrédients purs et naturellement efficaces.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="Etape">
-        <div class="Etape-container bg--lightPurple">
-          <h3 class="Etape-header color--purple">étape 3 : tonifiez</h3>
-          <p class="Etape-desc">
-            Dernière étape du démaquillage, les lotions toniques sans alcool
-            enrichies en extraits de plantes, éliminent les résidus de
-            démaquillant tout en apaisant et en réconfortant la peau.
-          </p>
-          <div class="Etape-banner">
-            <fieldset class="Etape-banner-desc bg--lightPurple border--purple">
-              <legend class="color--purple">
-                <span>LE</span> <span>+</span>
-              </legend>
-              <p>
-                Le [MICROBIOTE COMPLEX] optimise l’équilibre du microbiote
-                cutané et renforce les défenses naturelles, pour une peau en
-                pleine santé.
-              </p>
-            </fieldset>
-          </div>
-          <div class="Etape-subDesc">
-            <p>Découvrez nos 3 nouvelles formules fraîches</p>
+    </div>
+    <div class="Header-mobile Container">
+      <h3 class="Header-mobile-header">nouveau</h3>
+      <p class="Header-mobile-subHeader">
+        Les experts démaquillants aux Herbes des Alpes
+      </p>
+      <p class="Header-mobile-desc">La pureté des montagnes pour votre peau</p>
+    </div>
+    <div class="Banner">
+      <div class="Banner-container Container">
+        <div class="Banner-detail">
+          <h3 class="Banner-detail-header">
+            La pureté des Alpes : <br class="hidden-768" />
+            notre inspiration depuis toujours
+          </h3>
+          <div class="Banner-detail-desc">
             <p>
-              pour parfaire le démaquillage et rééquilibrer chaque type de peau
+              La pureté des Alpes a toujours inspiré <br class="hidden-375" />
+              Jacques-Courtin Clarins,
+              <br class="hidden-375" />
+              <br class="hidden-768" />
+              le fondateur de la marque. <br class="hidden-375" />
+              <br class="hidden-768" />
+
+              Aujourd’hui, Clarins va plus loin en <br class="hidden-375" />
+              cultivant et en récoltant ces herbes <br class="hidden-375" />
+              des Alpes <br class="hidden-375" />
+              <br class="hidden-768" />
+
+              au cœur du Domaine Clarins 100% bio: <br class="hidden-375" />
+              des actifs naturellement efficaces
+              <br class="hidden-375" />
+              <br class="hidden-768" />
+
+              et bons pour la peau. <br class="hidden-375" />
+              <br class="hidden-768" />
+
+              Vous profitez ainsi de tous <br class="hidden-375" />
+              les bienfaits des Alpes, à chaque <br class="hidden-375" />
+              démaquillage !
             </p>
-          </div>
-          <div class="Etape-product">
-            <div class="Etape-productList carousel">
-              <div class="Etape-productList-wrapper">
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="./images/etape3_1.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    Lotion Tonique Purifiante
-                  </h3>
-                  <p class="Etape-productList-item-desc">
-                    Peaux mixtes à grasses
-                  </p>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE TONIFIE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="./images/etape3_2.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    Lotion Tonique Hydratante
-                  </h3>
-                  <p class="Etape-productList-item-desc">
-                    Peaux normales à sèches
-                  </p>
-                  <a href="##" class="Etape-productList-item-buy">
-                    JE TONIFIE
-                  </a>
-                </div>
-                <div class="Etape-productList-item">
-                  <div class="Etape-productList-item-img">
-                    <img src="./images/etape3_3.png" />
-                  </div>
-                  <h3 class="Etape-productList-item-title">
-                    Lotion Tonique Apaisante
-                  </h3>
-                  <p class="Etape-productList-item-desc">
-                    Peaux très sèches ou sensibles
-                  </p>
-                  <a href="#" class="Etape-productList-item-buy">
-                    JE TONIFIE
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-dots">
-                <div>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                  <span class="carousel-dot"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="footer-container">
-          <div class="footer-left">
-            <div class="footer-header">
-              <p class="footer-header-text">
-                Tout comprendre sur le microbiote
-              </p>
-              <div class="footer-header-img">
-                <img src="./images/footer_1.png" />
-              </div>
-            </div>
-            <p class="footer-desc">
-              Chaque individu possède son propre microbiote cutané, un
-              écosystème qui vit à la surface et dans les couches superficielles
-              de l’épiderme. En tout, il existe 1000 milliards de bactéries,
-              dont l’équilibre agit sur l’apparence de la peau.
-            </p>
-            <div class="footer-details">
-              <p>
-                Les produits cosmétiques non adaptés, un démaquillage agressif
-                et la pollution peuvent le déséquilibrer. La peau devient plus
-                inconfortable, perd en éclat et présente des rougeurs et
-                imperfections.
-              </p>
-              <p>
-                Si le microbiote cutané est équilibré,la peau l’est aussi : elle
-                est belle et saine.
-              </p>
-            </div>
-          </div>
-          <div class="footer-right">
-            <!-- <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/NL0UT48K81g"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> -->
           </div>
         </div>
       </div>
     </div>
+    <div class="Etape">
+      <div class="Etape-container Container">
+        <h3 class="Etape-header">
+          étape 1 : <br class="hidden-375" />
+          démaquillez
+        </h3>
+        <p class="Etape-desc etape1-desc">
+          Des démaquillants quiretirent <br class="hidden-375" />
+          le maquillage, les impuretés et les traces de pollution en douceur et
+          en respectant de la flore cutanée.
+        </p>
+        <div class="Etape-banner">
+          <div class="Etape-banner-imgLeft etape1-banner-imgLeft">
+            <img src="./images/etape_2.png" />
+          </div>
+          <fieldset class="Etape-banner-desc etape1-banner-desc">
+            <legend><span>LE</span> <span>+</span></legend>
+            <p>
+              Le [COMPLEXE DOUCEUR], qui associe deux plantes issues du Domaine
+              Clarins: <br class="hidden-768" />
+              <br class="hidden-375" />
+              la gentiane jaune bio et la mélisse bio, contribue à apaiser,
+              calmer <br class="hidden-375" />et adoucir la peau.
+            </p>
+          </fieldset>
+          <div class="Etape-banner-imgRight etape1-banner-imgRight">
+            <img src="./images/etape_1.png" />
+          </div>
+          <p class="Etape-banner-textLeft etape1-banner-textLeft">
+            Gentiane jaune bio
+          </p>
+          <p class="Etape-banner-textRight etape1-banner-textRight">
+            Mélisse bio
+          </p>
+        </div>
+        <div class="Etape-subDesc etape1-subDesc">
+          Découvrez <br class="hidden-375" />
+          nos 3 nouvelles formules <br class="hidden-768" />
+          <br class="hidden-375" />
+          adaptées à tous les maquillages <br class="hidden-375" />
+          et toutes les habitudes
+        </div>
+
+        <div class="Etape-product">
+          <div class="Etape-productList carousel">
+            <div class="slick-3 Etape-productList-wrapper">
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="./images/etape_3.png" />
+                </div>
+                <h3 class="Etape-productList-item-title">
+                  <p>
+                    Lait Velours <br class="hidden-768" />
+                    Démaquillant
+                  </p>
+                </h3>
+                <div
+                  class="Etape-productList-item-desc etape1-productList-item-desc"
+                >
+                  <p>
+                    Il s’adresse aux adeptes <br class="hidden-768" />
+                    de confort <br class="hidden-375" />, de textures onctueuses
+                    <br class="hidden-768" />
+                    et de maquillages <br class="hidden-375" />
+                    légers.<br class="hidden-768" />
+                    Idéal pour un démaquillage <br class="hidden-768" />
+                    <br class="hidden-375" />
+                    tout en douceur.
+                  </p>
+                </div>
+                <a href="#" class="Etape-productList-item-buy">
+                  JE DÉMAQUILLE
+                </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="./images/etape_4.png" />
+                </div>
+                <h3 class="Etape-productList-item-title">
+                  <p>
+                    Eau Micellaire <br class="hidden-768" />
+                    Démaquillante
+                  </p>
+                </h3>
+                <div
+                  class="Etape-productList-item-desc etape1-productList-item-desc"
+                >
+                  <p>
+                    Elle convient aux peaux sensibles <br class="hidden-768" />
+                    ou aux <br class="hidden-375" />
+                    adeptes de démaquillages <br class="hidden-768" />
+                    légers et de textures <br class="hidden-375" />
+                    fraîches.
+                    <br class="hidden-768" />
+                    Idéale pour un <br class="hidden-768" />
+                    <br class="hidden-375" />démaquillage rapide
+                  </p>
+                </div>
+                <a href="##" class="Etape-productList-item-buy">
+                  JE DÉMAQUILLE
+                </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="./images/etape_5.png" />
+                </div>
+                <h3 class="Etape-productList-item-title">
+                  <p>
+                    Huile <br class="hidden-768" />
+                    Très Démaquillante
+                  </p>
+                </h3>
+                <div
+                  class="Etape-productList-item-desc etape1-productList-item-desc"
+                >
+                  <p>
+                    Elle séduit les amoureuses <br class="hidden-768" />
+                    <br class="hidden-375" />
+                    de maquillages intenses, <br class="hidden-768" /><br
+                      class="hidden-375"
+                    />
+                    waterproofs et de <br class="hidden-768" />
+                    <span>waterproofs et de</span>
+                    <br class="hidden-375" />
+                    textures <br class="hidden-768" />
+                    enveloppantes.
+                  </p>
+                </div>
+                <a href="#" class="Etape-productList-item-buy">
+                  JE DÉMAQUILLE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Etape">
+      <div class="Etape-container Container bg--lightGreen">
+        <h3 class="Etape-header color--green">étape 2 : nettoyez</h3>
+        <p class="Etape-desc">
+          Une offre complète pour nettoyer la peau, éliminer les impuretés et
+          particules <br class="hidden-375" />
+          de pollution.<br class="hidden-375" />
+          Grâce au [COMPLEXE DOUCEUR],<br class="hidden-375" />
+          la peau est apaisée et adoucie !
+        </p>
+        <div class="Etape-banner etape2-banner">
+          <fieldset
+            class="Etape-banner-desc etape2-banner-desc bg--lightGreen border--green"
+          >
+            <legend class="color--green"><span>LE</span> <span>+</span></legend>
+            <p>
+              L’extrait de Saponaire Bio, <br class="hidden-375" />
+              présent dans les nettoyants Clarins<br class="hidden-375" />
+              <br class="hidden-768" />
+              est un agent moussant naturel, idéal<br class="hidden-375" />
+              pour nettoyer la peau tout en douceur !
+            </p>
+          </fieldset>
+          <div class="Etape-banner-imgRight etape2-banner-imgRight">
+            <img src="./images/etape2_1.png" />
+          </div>
+          <p class="Etape-banner-textRight etape2-banner-textRight">
+            Saponaire bio
+          </p>
+        </div>
+        <div class="Etape-subDesc etape2-subDesc">
+          Découvrez nos 4 nouvelles<br class="hidden-375" />
+          formules <br class="hidden-768" />
+          adaptées à tous <br class="hidden-375" />
+          les besoins et types de peaux
+        </div>
+        <div class="Etape-product">
+          <div class="Etape-productList carousel">
+            <div class="slick Etape-productList-wrapper">
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="images/etape2_2.png" />
+                </div>
+                <h3
+                  class="Etape-productList-item-title etape2-productList-item-title"
+                >
+                  Doux Nettoyant <br />
+                  Moussant Purifiant
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Peaux mixtes à grasses
+                </p>
+                <a href="#" class="Etape-productList-item-buy"> JE NETTOIE </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="images/etape2_3.png" />
+                </div>
+                <h3
+                  class="Etape-productList-item-title etape2-productList-item-title"
+                >
+                  Doux Nettoyant <br />
+                  Moussant Hydratant
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Peaux normales à sèches
+                </p>
+                <a href="##" class="Etape-productList-item-buy"> JE NETTOIE </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="images/etape2_4.png" />
+                </div>
+                <h3
+                  class="Etape-productList-item-title etape2-productList-item-title"
+                >
+                  Doux Nettoyant <br />
+                  Moussant Apaisant
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Peaux très sèches ou sensibles
+                </p>
+                <a href="#" class="Etape-productList-item-buy"> JE NETTOIE </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img etape2-item-img">
+                  <img src="images/etape2_5.png" />
+                </div>
+                <h3
+                  class="Etape-productList-item-title etape2-productList-item-title"
+                >
+                  Mousse Nettoyante <br />
+                  Peau Neuve
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Toutes peaux
+                </p>
+                <a href="#" class="Etape-productList-item-buy"> JE NETTOIE </a>
+              </div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="About">
+      <div class="About-container Container">
+        <div class="About-content">
+          <div class="About-content-logo">
+            <img src="images/about_2.png" />
+          </div>
+          <h3 class="About-content-header">
+            Le Domaine Clarins : <br class="hidden-768" /><br
+              class="hidden-375"
+            />
+            un laboratoire<br class="hidden-375" />
+            à ciel ouvert
+          </h3>
+
+          <div class="About-content-ad">
+            <div class="About-content-ad-video">
+              <!-- <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/sb6WlQiaJeM"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe> -->
+            </div>
+            <div class="About-content-ad-desc">
+              <p>
+                Un site unique et préservé, niché <br class="hidden-375" />
+                à 1 400<br class="hidden-768" />
+                mètres d’altitude au cœur<br class="hidden-375" />
+                des Alpes<br class="hidden-768" />
+                où les plantes poussent<br class="hidden-375" />
+                au rythme<br class="hidden-768" />
+                des saisons.
+              </p>
+
+              <p>
+                Un véritable écrin de pureté sans<br class="hidden-375" /><br
+                  class="hidden-768"
+                />
+                pollution de l’air et des sols sur<br class="hidden-375" />
+                lequel<br class="hidden-768" />
+                Clarins, élabore ses propres<br class="hidden-375" />
+                extraits<br class="hidden-768" />
+                de plantes gorgés d’actifs,<br class="hidden-375" />
+                dont la<br class="hidden-768" />
+                gentiane jaune bio et mélisse<br class="hidden-375" />
+                bio :<br class="hidden-768" />
+                des ingrédients purs<br class="hidden-375" />
+                et naturellement<br class="hidden-768" />
+                efficaces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Etape etape3">
+      <div class="Etape-container Container bg--lightPurple">
+        <h3 class="Etape-header color--purple">étape 3 : tonifiez</h3>
+        <p class="Etape-desc etape3-desc">
+          Dernière étape du démaquillage, <br class="hidden-375" />
+          les lotions toniques sans alcool enrichies<br class="hidden-375" />
+          en extraits de plantes, éliminent<br class="hidden-375" />
+          les résidus de démaquillant tout en <br class="hidden-375" />
+          apaisant et en réconfortant la peau.
+        </p>
+        <div class="Etape-banner etape3-banner">
+          <fieldset
+            class="Etape-banner-desc etape3-banner-desc bg--lightPurple border--purple"
+          >
+            <legend class="color--purple">
+              <span>LE</span> <span>+</span>
+            </legend>
+            <p>
+              Le [MICROBIOTE COMPLEX] optimise<br class="hidden-375" />
+              l’équilibre du microbiote cutané<br class="hidden-375" />
+              et renforce les défenses naturelles,<br class="hidden-375" />
+              pour une peau en pleine santé.
+            </p>
+          </fieldset>
+        </div>
+        <div class="Etape-subDesc etape3-subDesc">
+          <p>
+            Découvrez nos 3 nouvelles <br class="hidden-375" />
+            formules fraîches
+          </p>
+          <p>
+            pour parfaire le démaquillage<br class="hidden-375" />
+            et rééquilibrer chaque<br class="hidden-375" />
+            type de peau
+          </p>
+        </div>
+        <div class="Etape-product">
+          <div class="Etape-productList carousel">
+            <div class="slick-3 Etape-productList-wrapper">
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="./images/etape3_1.png" />
+                </div>
+                <h3 class="Etape-productList-item-title">
+                  Lotion Tonique <br />
+                  Purifiante
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Peaux mixtes à grasses
+                </p>
+                <a href="#" class="Etape-productList-item-buy"> JE TONIFIE </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="./images/etape3_2.png" />
+                </div>
+                <h3 class="Etape-productList-item-title">
+                  Lotion Tonique <br />
+                  Hydratante
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Peaux normales à sèches
+                </p>
+                <a href="##" class="Etape-productList-item-buy"> JE TONIFIE </a>
+              </div>
+              <div class="Etape-productList-item">
+                <div class="Etape-productList-item-img">
+                  <img src="./images/etape3_3.png" />
+                </div>
+                <h3 class="Etape-productList-item-title">
+                  Lotion Tonique <br />
+                  Apaisante
+                </h3>
+                <p
+                  class="Etape-productList-item-desc etape2-productList-item-desc"
+                >
+                  Peaux très sèches ou sensibles
+                </p>
+                <a href="#" class="Etape-productList-item-buy"> JE TONIFIE </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-container Container">
+        <div class="footer-left">
+          <div class="footer-header">
+            <p class="footer-header-text">
+              <span
+                >Tout comprendre <br class="hidden-375" /><br
+                  class="hidden-768"
+                />sur le microbiote</span
+              >
+            </p>
+            <div class="footer-header-img">
+              <img src="./images/footer_1.png" />
+            </div>
+          </div>
+          <p class="footer-desc">
+            Chaque individu possède son propre <br class="hidden-375" />
+            microbiote<br class="hidden-768" />
+            cutané, un écosystème<br class="hidden-375" />
+            qui vit à la surface<br class="hidden-768" />
+            et dans les couches<br class="hidden-375" />
+            superficielles de l’épiderme.<br class="hidden-375" /><br
+              class="hidden-768"
+            />
+            En tout, il existe 1000 milliards<br class="hidden-375" />
+            de bactéries,<br class="hidden-768" />
+            dont l’équilibre agit<br class="hidden-375" />
+            sur l’apparence de la peau.
+          </p>
+          <div class="footer-details">
+            <p>
+              Les produits cosmétiques <br class="hidden-375" />
+              non adaptés,<br class="hidden-768" />
+              un démaquillage<br class="hidden-375" />
+              agressif et la pollution<br class="hidden-768" />
+              peuvent<br class="hidden-375" />
+              le déséquilibrer. La peau devient<br class="hidden-375" /><br
+                class="hidden-768"
+              />
+              plus inconfortable, perd en éclat<br class="hidden-375" />
+              et présente<br class="hidden-768" />
+              des rougeurs<br class="hidden-375" />
+              et imperfections.
+            </p>
+            <p>
+              Si le microbiote cutané<br class="hidden-375" />
+              est équilibré,<br class="hidden-768" />la peau l’est aussi :<br
+                class="hidden-375"
+              />
+              elle est belle et saine.
+            </p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <!-- <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/NL0UT48K81g"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe> -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
   </body>
 </html>

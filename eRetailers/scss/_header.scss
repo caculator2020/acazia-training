@@ -1,27 +1,42 @@
 .Header {
   &-container {
-    background: url("../images/header_banner.png") no-repeat -210px -63px;
+    background: url("../images/header_bg.png") no-repeat -200px -63px;
+    @media (max-width: 1000px) {
+      background: url("../images/header_bg.png") no-repeat -310px -60px;
+    }
+    @media (max-width: 767px) {
+      background: url("../images/header_bg.png") no-repeat -300px -30px;
+    }
     height: 429px;
     display: flex;
-    @media (max-width: 1000px) {
+    @media (max-width: 767px) {
       flex-direction: column;
+      height: 465px;
     }
   }
   &-left {
-    flex: 0 0 550px;
-    @media (max-width: 1000px) {
+    flex: 0 0 7/12 * 100%;
+    position: relative;
+    &-img {
+      display: inline-block;
+      position: absolute;
+      top: 25px;
+      right: 185px;
+      @media (max-width: 1000px) {
+        top: 30px;
+      }
+      @media (max-width: 767px) {
+        right: 285px;
+      }
+    }
+    @media (max-width: 767px) {
       order: 2;
-    }
-    & > img {
-      width: 100%;
-    }
-    @media (max-width: 1000px) {
       flex: 0 0 300px;
     }
   }
   &-right {
-    flex: 0 0 450px;
-    @media (max-width: 1000px) {
+    flex: 0 0 5/12 * 100%;
+    @media (max-width: 767px) {
       order: 1;
       flex: 0 0 45px;
     }
@@ -29,7 +44,7 @@
     &-brand {
       text-align: end;
       margin-top: 37px;
-      @media (max-width: 1000px) {
+      @media (max-width: 767px) {
         margin-top: 0px;
       }
       font-size: 30px;
@@ -40,17 +55,17 @@
       }
     }
     &-subTitle {
-      @media (max-width: 1000px) {
+      @media (max-width: 767px) {
         display: none;
       }
       font-family: GothamMedium;
       font-size: 16px;
       color: #be0f34;
       text-transform: uppercase;
-      margin-top: 75px;
+      margin-top: 40px;
     }
     &-title {
-      @media (max-width: 1000px) {
+      @media (max-width: 767px) {
         display: none;
       }
       font-family: Clarin;
@@ -59,13 +74,40 @@
       font-weight: 400;
     }
     &-desc {
-      @media (max-width: 1000px) {
+      @media (max-width: 767px) {
         display: none;
       }
       font-family: GothamBook;
       margin-top: 10px;
       font-size: 18px;
       font-weight: 400;
+    }
+  }
+  &-mobile {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+      text-align: center;
+      &-header {
+        font-family: GothamMedium;
+        font-size: 14px;
+        color: #be0f34;
+        text-transform: uppercase;
+      }
+      &-subHeader {
+        font-family: Clarin;
+        margin-top: 10px;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 1 !important;
+      }
+      &-desc {
+        font-family: GothamBook;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
     }
   }
 }

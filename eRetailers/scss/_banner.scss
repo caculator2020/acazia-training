@@ -4,9 +4,10 @@
     background: url("../images/banner.png") no-repeat center;
     height: 356px;
     padding: 53px 91px;
-    @media (max-width: 1000px) {
+    @media (max-width: 767px) {
       height: 482px;
       padding: 27px 20px;
+      background: url("../images/banner.png") no-repeat -1215px -90px;
     }
   }
   &-detail {
@@ -15,8 +16,12 @@
     background-color: #fff;
     padding: 24px 73px;
     @media (max-width: 1000px) {
+      padding: 24px 43px;
+    }
+    @media (max-width: 767px) {
       padding: 12px 12px 45px 12px;
     }
+
     text-align: center;
     &-header {
       font-family: Clarin;
@@ -29,7 +34,10 @@
       line-height: 1.3;
       font-weight: 400;
       @media (max-width: 1000px) {
-        margin-top: 43px;
+        margin-top: 10px;
+      }
+      @media (max-width: 767px) {
+        margin-top: 20px;
       }
     }
   }
