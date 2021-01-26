@@ -66,6 +66,16 @@
     }
   }
 }
+@media (max-width: 1000px) {
+  .footer {
+    &-right {
+      flex: 0 0 285px;
+    }
+    &-header-text {
+      font-size: 27px;
+    }
+  }
+}
 @media (max-width: 767px) {
   //video 409X433
   .footer {
@@ -74,6 +84,9 @@
     }
     &-left {
       padding-right: 0;
+    }
+    &-right {
+      flex: 0 0 0px;
     }
     &-header-text {
       margin-right: 0;

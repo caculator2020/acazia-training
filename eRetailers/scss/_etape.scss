@@ -23,6 +23,7 @@ $lightPurple: #f2f4ff;
     line-height: 1.5;
   }
   &-banner {
+    overflow: hidden !important;
     position: relative;
     height: 240px;
     overflow: visible;
@@ -49,32 +50,36 @@ $lightPurple: #f2f4ff;
       font-size: 14px;
       position: absolute;
       z-index: 3;
-      top: 50px;
+      top: 65px;
       outline: none;
       border: 5px solid $orange;
-      margin: 0 164px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
       padding: 0px 65px;
       background-color: #fff;
       line-height: 1.5;
       text-align: center;
-      & > legend {
-        display: flex;
-        align-items: center;
+      &-le {
+        display: inline-flex;
         font-family: GothamBold;
-        padding: 0 9px;
-        color: $orange;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -33px;
+        padding: 5px 10px;
+        background-color: #fff;
         font-size: 24px;
-        font-weight: bold;
-        margin-bottom: -15px;
+        color: $orange;
+        z-index: -1;
         & > span {
           &:nth-child(2) {
             font-size: 47px;
+            display: inline-block;
             margin-left: 5px;
           }
         }
-      }
-      & > p {
-        margin-bottom: 10px;
       }
     }
     &-textLeft {
@@ -105,7 +110,7 @@ $lightPurple: #f2f4ff;
       text-align: center;
       &-title,
       &-desc {
-        padding: 0 15px;
+        padding: 0 12px;
       }
       &-title {
         font-family: GothamMedium;
@@ -159,22 +164,23 @@ $lightPurple: #f2f4ff;
 //Etape1
 .etape1 {
   &-banner-desc {
-    padding: 10px 30px;
+    padding: 18px 30px;
   }
 }
 //Etape2
 .etape2 {
   &-banner {
+    height: 280px;
     &-imgRight {
-      top: 44px;
+      top: 30px;
     }
     &-textRight {
-      top: 212px;
+      top: 200px;
       right: 55px;
     }
     &-desc {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 18px;
+      padding-bottom: 18px;
     }
   }
   &-productList-item-desc {
@@ -190,8 +196,8 @@ $lightPurple: #f2f4ff;
   &-banner {
     height: 200px;
     &-desc {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 18px;
+      padding-bottom: 18px;
     }
   }
 }
@@ -209,10 +215,10 @@ $lightPurple: #f2f4ff;
         right: 0;
       }
       &-desc {
-        margin: 0 20px;
-        padding: 0px 13px;
+        padding: 17px 13px;
         top: 50px;
         padding-bottom: 10px;
+        width: 82%;
       }
       &-textLeft {
         z-index: 5;
@@ -232,7 +238,7 @@ $lightPurple: #f2f4ff;
       margin-bottom: 10px;
     }
     &-banner-desc {
-      top: 25px;
+      top: 45px;
     }
     &-banner-imgLeft {
       left: -20px;
@@ -242,12 +248,12 @@ $lightPurple: #f2f4ff;
       right: -35px;
     }
     &-banner-textLeft {
-      top: 175px;
+      top: 180px;
       left: 40px;
     }
     &-banner-textRight {
-      top: 175px;
-      left: 195px;
+      top: 180px;
+      left: 190px;
     }
   }
   .etape2 {
@@ -260,10 +266,11 @@ $lightPurple: #f2f4ff;
     &-banner-imgRight {
       transform: rotate(45deg);
       right: 20px;
+      top: 15px;
     }
 
     &-banner-textRight {
-      top: 215px;
+      top: 185px;
       left: 250px;
     }
     &-productList-item-desc {
@@ -280,6 +287,18 @@ $lightPurple: #f2f4ff;
     }
   }
 }
+@media (max-width: 767px) and (min-width: 400px) {
+  .etape1 {
+    &-banner-textRight {
+      left: 225px;
+    }
+  }
+  .etape2 {
+    &-banner-textRight {
+      left: 295px;
+    }
+  }
+}
 @media (min-width: 767px) and (max-width: 1000px) {
   .etape1 {
     &-subDesc {
@@ -289,11 +308,14 @@ $lightPurple: #f2f4ff;
     &-productList-item-desc {
       font-size: 12px;
     }
+    &-banner-desc {
+      padding: 18px 10px;
+      width: 60%;
+    }
   }
   .etape2 {
     &-subDesc {
       margin: 0 30px;
-      margin-top: 65px;
     }
     &-productList-item-desc {
       font-size: 10px;
@@ -305,7 +327,4 @@ $lightPurple: #f2f4ff;
   .etape3-subDesc {
     margin: 25px;
   }
-}
-.slick-dots > li {
-  margin: 0 -5px;
 }

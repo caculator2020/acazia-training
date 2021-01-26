@@ -7,6 +7,7 @@
     @media (max-width: 767px) {
       height: 482px;
       padding: 27px 20px;
+      padding-bottom: 54px;
       background: url("../images/banner.png") no-repeat -1215px -90px;
     }
   }
@@ -27,6 +28,8 @@
       font-family: Clarin;
       font-size: 35px;
       color: #be0f34;
+      line-height: 1 !important;
+      margin-bottom: 16px;
     }
     &-desc {
       font-family: GothamBook;
@@ -38,6 +41,7 @@
       }
       @media (max-width: 767px) {
         margin-top: 20px;
+        font-size: 15px;
       }
     }
   }

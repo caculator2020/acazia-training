@@ -446,22 +446,22 @@ textarea {
 
 @font-face {
   font-family: GothamMedium;
-  src: url("../fonts/GothamMedium.otf");
+  src: url("../fonts/GothamMedium.otf"), url("../fonts/GothamMedium.ttf"), url("../fonts/GothamMedium.woff"), url("../fonts/GothamMedium.woff2");
 }
 
 @font-face {
   font-family: Clarin;
-  src: url("../fonts/clarins-regular.woff.ttf");
+  src: url("../fonts/clarins-regular.woff.ttf"), url("../fonts/Clarins-Regular.woff"), url("../fonts/Clarins-Regular.woff2");
 }
 
 @font-face {
   font-family: GothamBook;
-  src: url("../fonts/GothamBook.otf");
+  src: url("../fonts/GothamBook.otf"), url("../fonts/GothamBook.ttf"), url("../fonts/GothamBook.woff"), url("../fonts/GothamBook.woff2");
 }
 
 @font-face {
   font-family: GothamBold;
-  src: url("../fonts/GothamBold.otf");
+  src: url("../fonts/GothamBold.otf"), url("../fonts/Gotham-Bold.ttf"), url("../fonts/Gotham-Bold.woff"), url("../fonts/Gotham-Bold.woff2");
 }
 
 .Container {
@@ -470,7 +470,7 @@ textarea {
 
 @media (min-width: 375px) {
   .Container {
-    max-width: 375px;
+    max-width: 100%;
   }
 }
 
@@ -502,7 +502,7 @@ a {
   display: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .hidden-375 {
     display: block;
   }
@@ -519,7 +519,8 @@ a {
 }
 
 .Header-container {
-  background: url("../images/header_bg.png") no-repeat -200px -63px;
+  background: url("../images/header_bg.png") no-repeat -210px -70px;
+  background-size: 1380px;
   height: 429px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,13 +529,15 @@ a {
 
 @media (max-width: 1000px) {
   .Header-container {
-    background: url("../images/header_bg.png") no-repeat -310px -60px;
+    background: url("../images/header_bg.png") no-repeat -160px -15px;
+    background-size: 1065px;
   }
 }
 
 @media (max-width: 767px) {
   .Header-container {
-    background: url("../images/header_bg.png") no-repeat -300px -30px;
+    background: url("../images/header_bg.png") no-repeat -60px 35px;
+    background-size: 775px;
   }
 }
 
@@ -544,7 +547,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 465px;
+    height: 345px;
   }
 }
 
@@ -558,19 +561,21 @@ a {
 .Header-left-img {
   display: inline-block;
   position: absolute;
-  top: 25px;
-  right: 185px;
+  top: 5%;
+  left: 52%;
 }
 
 @media (max-width: 1000px) {
   .Header-left-img {
-    top: 30px;
+    top: 10%;
+    left: 55%;
   }
 }
 
 @media (max-width: 767px) {
   .Header-left-img {
-    right: 285px;
+    top: 3%;
+    left: 1%;
   }
 }
 
@@ -612,7 +617,7 @@ a {
 
 @media (max-width: 767px) {
   .Header-right-brand {
-    margin-top: 0px;
+    margin-top: 25px;
   }
 }
 
@@ -637,7 +642,7 @@ a {
 .Header-right-title {
   font-family: Clarin;
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 39px;
   font-weight: 400;
 }
 
@@ -678,7 +683,7 @@ a {
   .Header-mobile-subHeader {
     font-family: Clarin;
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 400;
     line-height: 1 !important;
   }
@@ -702,6 +707,7 @@ a {
   .Banner-container {
     height: 482px;
     padding: 27px 20px;
+    padding-bottom: 54px;
     background: url("../images/banner.png") no-repeat -1215px -90px;
   }
 }
@@ -730,6 +736,8 @@ a {
   font-family: Clarin;
   font-size: 35px;
   color: #be0f34;
+  line-height: 1 !important;
+  margin-bottom: 16px;
 }
 
 .Banner-detail-desc {
@@ -748,6 +756,7 @@ a {
 @media (max-width: 767px) {
   .Banner-detail-desc {
     margin-top: 20px;
+    font-size: 15px;
   }
 }
 
@@ -771,6 +780,7 @@ a {
 }
 
 .Etape-banner {
+  overflow: hidden !important;
   position: relative;
   height: 240px;
   overflow: visible;
@@ -800,38 +810,43 @@ a {
   font-size: 14px;
   position: absolute;
   z-index: 3;
-  top: 50px;
+  top: 65px;
   outline: none;
   border: 5px solid #eca647;
-  margin: 0 164px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
   padding: 0px 65px;
   background-color: #fff;
   line-height: 1.5;
   text-align: center;
 }
 
-.Etape-banner-desc > legend {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.Etape-banner-desc-le {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: GothamBold;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: GothamBold;
-  padding: 0 9px;
-  color: #eca647;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -33px;
+  padding: 5px 10px;
+  background-color: #fff;
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: -15px;
+  color: #eca647;
+  z-index: -1;
 }
 
-.Etape-banner-desc > legend > span:nth-child(2) {
+.Etape-banner-desc-le > span:nth-child(2) {
   font-size: 47px;
+  display: inline-block;
   margin-left: 5px;
-}
-
-.Etape-banner-desc > p {
-  margin-bottom: 10px;
 }
 
 .Etape-banner-textLeft {
@@ -865,7 +880,7 @@ a {
 }
 
 .Etape-productList-item-title, .Etape-productList-item-desc {
-  padding: 0 15px;
+  padding: 0 12px;
 }
 
 .Etape-productList-item-title {
@@ -930,21 +945,25 @@ a {
 }
 
 .etape1-banner-desc {
-  padding: 10px 30px;
+  padding: 18px 30px;
+}
+
+.etape2-banner {
+  height: 280px;
 }
 
 .etape2-banner-imgRight {
-  top: 44px;
+  top: 30px;
 }
 
 .etape2-banner-textRight {
-  top: 212px;
+  top: 200px;
   right: 55px;
 }
 
 .etape2-banner-desc {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .etape2-productList-item-desc {
@@ -961,8 +980,8 @@ a {
 }
 
 .etape3-banner-desc {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 @media (max-width: 767px) {
@@ -979,10 +998,10 @@ a {
     right: 0;
   }
   .Etape-banner-desc {
-    margin: 0 20px;
-    padding: 0px 13px;
+    padding: 17px 13px;
     top: 50px;
     padding-bottom: 10px;
+    width: 82%;
   }
   .Etape-banner-textLeft {
     z-index: 5;
@@ -999,7 +1018,7 @@ a {
     margin-bottom: 10px;
   }
   .etape1-banner-desc {
-    top: 25px;
+    top: 45px;
   }
   .etape1-banner-imgLeft {
     left: -20px;
@@ -1009,12 +1028,12 @@ a {
     right: -35px;
   }
   .etape1-banner-textLeft {
-    top: 175px;
+    top: 180px;
     left: 40px;
   }
   .etape1-banner-textRight {
-    top: 175px;
-    left: 195px;
+    top: 180px;
+    left: 190px;
   }
   .etape2-banner {
     overflow: hidden;
@@ -1026,9 +1045,10 @@ a {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     right: 20px;
+    top: 15px;
   }
   .etape2-banner-textRight {
-    top: 215px;
+    top: 185px;
     left: 250px;
   }
   .etape2-productList-item-desc {
@@ -1045,6 +1065,15 @@ a {
   }
 }
 
+@media (max-width: 767px) and (min-width: 400px) {
+  .etape1-banner-textRight {
+    left: 225px;
+  }
+  .etape2-banner-textRight {
+    left: 295px;
+  }
+}
+
 @media (min-width: 767px) and (max-width: 1000px) {
   .etape1-subDesc {
     margin: 0 20px;
@@ -1053,9 +1082,12 @@ a {
   .etape1-productList-item-desc {
     font-size: 12px;
   }
+  .etape1-banner-desc {
+    padding: 18px 10px;
+    width: 60%;
+  }
   .etape2-subDesc {
     margin: 0 30px;
-    margin-top: 65px;
   }
   .etape2-productList-item-desc {
     font-size: 10px;
@@ -1066,10 +1098,6 @@ a {
   .etape3-subDesc {
     margin: 25px;
   }
-}
-
-.slick-dots > li {
-  margin: 0 -5px;
 }
 
 .About {
@@ -1280,6 +1308,17 @@ a {
   font-weight: bold;
 }
 
+@media (max-width: 1000px) {
+  .footer-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 285px;
+            flex: 0 0 285px;
+  }
+  .footer-header-text {
+    font-size: 27px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer-container {
     -webkit-box-orient: vertical;
@@ -1289,6 +1328,11 @@ a {
   }
   .footer-left {
     padding-right: 0;
+  }
+  .footer-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0px;
   }
   .footer-header-text {
     margin-right: 0;
@@ -1304,5 +1348,21 @@ a {
   .footer-header-img {
     display: none;
   }
+}
+
+button.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
