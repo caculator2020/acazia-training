@@ -1,0 +1,114 @@
+//Etape40ans
+.Etape-60ans-row1 {
+  & > div[class="Etape-col"] {
+    &:nth-child(1) {
+      flex: 0 1 40%;
+      text-align: end;
+      align-self: center;
+      & > div[class="Etape-img"] {
+        margin-top: 75px;
+      }
+      & > p[class="Etape-desc"] {
+        margin-top: 10px;
+      }
+    }
+    &:nth-child(2) {
+      flex: 0 1 60%;
+      & > div[class="Etape-img"] {
+        margin-top: 25px;
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.Etape-60ans-row2 {
+  padding-bottom: 35px;
+  & > div[class="Etape-col"] {
+    &:nth-child(1) {
+      flex: 0 1 30%;
+      text-align: end;
+      & > div[class="Etape-btn-red"] {
+        margin-top: 60px;
+      }
+    }
+    &:nth-child(2) {
+      flex: 0 1 40%;
+      & > div[class="Etape-img"] {
+        margin-top: 105px;
+      }
+    }
+    &:nth-child(3) {
+      align-self: flex-end;
+      flex: 0 1 30%;
+      & > div[class="Etape-btn-red"] {
+        margin-top: 0px;
+      }
+      & > div[class="Etape-img"] {
+        margin-bottom: -35px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .Etape-60ans-row1 {
+    background-color: $lightYellow;
+    & > div[class="Etape-col"] {
+      &:nth-child(1) {
+        flex: 0 1 50%;
+        & > div[class="Etape-btn-red"] {
+          margin-top: 20px;
+        }
+      }
+      &:nth-child(2) {
+        flex: 0 1 50%;
+        & > div[class="Etape-img"] {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: block;
+            margin-top: 35px;
+            & > img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Etape-60ans-row2 {
+    background-color: $lightYellow;
+    padding-bottom: 0px;
+    flex-direction: column;
+    & > div[class="Etape-col"] {
+      &:nth-child(1) {
+        padding-right: 20%;
+        align-self: center;
+        & > div[class="Etape-btn-red"] {
+          margin-top: 40px;
+        }
+      }
+      &:nth-child(2) {
+        overflow: hidden;
+        padding-bottom: 30px;
+        & > div[class="Etape-img"] {
+          margin-top: 20px;
+          & > img {
+            margin-left: 65px;
+          }
+        }
+      }
+      &:nth-child(3) {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+        & > div[class="Etape-img"] {
+          display: none;
+        }
+      }
+    }
+  }
+}

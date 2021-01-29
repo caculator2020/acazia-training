@@ -1,0 +1,25 @@
+.Container {
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 945px;
+  }
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+.break-mobile {
+  display: none;
+  @media (max-width: 767px) {
+    display: initial;
+  }
+}
+.break-desktop {
+  display: initial;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.Etape-50ans-row2 {
+  padding-bottom: 35px;
+  & > div[class="Etape-col"] {
+    &:nth-child(1) {
+      align-self: center;
+      flex: 0 1 30%;
+      text-align: end;
+      & > div[class="Etape-btn-red"] {
+        margin-top: 50px;
+      }
+    }
+    &:nth-child(2) {
+      flex: 0 1 40%;
+      & > div[class="Etape-img"] {
+        margin-top: 0px;
+      }
+    }
+    &:nth-child(3) {
+      align-self: flex-end;
+      flex: 0 1 30%;
+      & > div[class="Etape-btn-red"] {
+        margin-top: 0px;
+      }
+      & > div[class="Etape-img"] {
+        margin-bottom: -35px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .Etape-50ans-row2 {
+    padding-bottom: 0px;
+  }
+}
+#hidden {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

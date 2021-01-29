@@ -1,0 +1,110 @@
+//Etape30ans
+.Etape-30ans-row1 {
+  & > div[class="Etape-col"] {
+    &:nth-child(1),
+    &:nth-child(3) {
+      flex: 0 1 38%;
+    }
+    &:nth-child(2) {
+      flex: 0 1 24%;
+      text-align: end;
+      align-self: flex-end;
+    }
+    &:nth-child(3) {
+      & > div[class="Etape-img"] {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.Etape-30ans-row2 {
+  padding-bottom: 40px;
+  & > div[class="Etape-col"] {
+    &:nth-child(1),
+    &:nth-child(3) {
+      text-align: start;
+      flex: 0 1 30%;
+    }
+    &:nth-child(2) {
+      flex: 0 1 40%;
+    }
+    &:nth-child(1) {
+      text-align: end;
+    }
+    &:nth-child(3) {
+      text-align: start;
+      align-self: flex-end;
+    }
+    &:nth-child(2) {
+      & > div {
+        position: relative;
+      }
+    }
+  }
+  &-img-spoon {
+    position: absolute;
+    bottom: -60px;
+    left: -130px;
+    z-index: -1;
+  }
+}
+@media (max-width: 767px) {
+  .Etape-30ans-row1 {
+    margin-bottom: 50px;
+    & > div[class="Etape-col"] {
+      &:nth-child(1) {
+        display: none;
+      }
+      &:nth-child(2) {
+        flex: 0 1 50%;
+        & > div[class="Etape-btn-red"] {
+          margin-top: 20px;
+        }
+      }
+      &:nth-child(3) {
+        flex: 0 1 50%;
+        & > div[class="Etape-img"] {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: block;
+            margin-top: 35px;
+            & > img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Etape-30ans-row2 {
+    padding-bottom: 0px;
+    flex-direction: column;
+    & > div[class="Etape-col"] {
+      &:nth-child(1) {
+        align-self: center;
+      }
+      &:nth-child(2) {
+        overflow: hidden;
+        padding-bottom: 50px;
+        & > div[class="Etape-img"] {
+          & > img {
+            margin-left: 65px;
+          }
+        }
+      }
+      &:nth-child(3) {
+        margin-top: 10px;
+        width: 100%;
+        text-align: start;
+        padding-left: 40%;
+        background-color: $lightYellow;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

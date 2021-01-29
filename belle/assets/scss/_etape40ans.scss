@@ -1,0 +1,168 @@
+//Etape40ans
+#pr-30 {
+  @media (min-width: 768px) {
+    padding-right: 30px;
+  }
+}
+.Etape-40ans-row1 {
+  & > div[class="Etape-col"] {
+    //col1
+    &:nth-child(1) {
+      flex: 0 1 30%;
+      text-align: end;
+      & > div[class="Etape-row"] {
+        flex-direction: column;
+        & > div[class="Etape-img"] {
+          margin-top: 75px;
+        }
+        & > p[class="Etape-desc"] {
+          margin-top: 10px;
+        }
+      }
+    }
+    //col2
+    &:nth-child(2) {
+      flex: 0 1 70%;
+      //row
+      & > div[class="Etape-row"] {
+        //col1
+        & > div[class="Etape-col"] {
+          flex: 0 1 50%;
+          &:nth-child(1) {
+            & > div[class="Etape-img"] {
+              margin-top: 35px;
+              &:nth-child(2) {
+                display: none;
+              }
+            }
+          }
+          //col2
+          &:nth-child(2) {
+            & > div[class="Etape-btn-red"] {
+              margin-top: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Etape-40ans-row2 {
+  padding-bottom: 35px;
+  & > div[class="Etape-col"] {
+    &:nth-child(1) {
+      flex: 0 1 30%;
+      text-align: end;
+      & > div[class="Etape-btn-red"] {
+        margin-top: 50px;
+      }
+    }
+    &:nth-child(2) {
+      flex: 0 1 40%;
+      & > div[class="Etape-img"] {
+        margin-top: 40px;
+      }
+    }
+    &:nth-child(3) {
+      flex: 0 1 30%;
+      & > div[class="Etape-btn-red"] {
+        margin-top: 0px;
+      }
+      & > div[class="Etape-img"] {
+        margin-bottom: -35px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .Etape-40ans-row1 {
+    background-color: #fefef6;
+    flex-direction: column;
+    & > div[class="Etape-col"] {
+      &:nth-child(1) {
+        order: 2;
+        & > div[class="Etape-row"] {
+          flex-direction: row;
+          margin-top: 35px;
+          & > div[class="Etape-img"] {
+            margin-top: 0px;
+            flex: 0 1 25%;
+            text-align: center;
+          }
+          & > p[class="Etape-desc"] {
+            flex: 0 1 75%;
+            text-align: start;
+          }
+        }
+        & > p[class="Etape-descGrayText"] {
+          text-align: center;
+          margin-top: 35px;
+        }
+      }
+      &:nth-child(2) {
+        order: 1;
+        & > div[class="Etape-row"] {
+          & > div[class="Etape-col"] {
+            &:nth-child(1) {
+              order: 2;
+              & > div[class="Etape-img"] {
+                &:nth-child(1) {
+                  display: none;
+                }
+                &:nth-child(2) {
+                  display: block;
+                  & > img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              order: 1;
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Etape-40ans-row2 {
+    background-color: #fefef6;
+    padding-bottom: 0px;
+    flex-direction: column;
+    & > div[class="Etape-col"] {
+      &:nth-child(1) {
+        align-self: center;
+        & > div[class="Etape-btn-red"] {
+          margin-top: 30px;
+        }
+      }
+      &:nth-child(2) {
+        z-index: 3;
+        overflow: hidden;
+        padding-bottom: 50px;
+        & > div[class="Etape-img"] {
+          margin-top: 10px;
+          & > img {
+            margin-left: 65px;
+          }
+        }
+      }
+      &:nth-child(3) {
+        position: relative;
+        margin-top: 10px;
+        width: 100%;
+        text-align: start;
+        padding-left: 40%;
+        background-color: $lightYellow;
+        padding-bottom: 15px;
+        & > div[class="Etape-img"] {
+          position: absolute;
+          top: -195px;
+          left: -35px;
+        }
+      }
+    }
+  }
+}
